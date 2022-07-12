@@ -12,19 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="fizzbuzz()">
     <div class="container">
         <div class="counter"></div>
-        <h4>lets play:</h4>
+        <h4 class="lplay">let's Play!</h4>
         <h5 id="fizzcount"></h5>
-        <button onclick="fizzbuzz()">start</button>
 
         <div class="btns">
-            <button id="n" onclick="user_answer(this.id)">Number</button>
-            <button id="f" onclick="user_answer(this.id)">Fizz!</button>
-            <button id="b" onclick="user_answer(this.id)">Buzz!</button>
-            <button id="fb" onclick="user_answer(this.id)">Fizz-Buzz!</button>
+            <button class="d_btn" id="n" onclick="user_answer(this.id)">Number</button>
+            <button class="d_btn" id="f" onclick="user_answer(this.id)">Fizz!</button>
+            <button class="d_btn" id="b" onclick="user_answer(this.id)">Buzz!</button>
+            <button class="d_btn" id="fb" onclick="user_answer(this.id)">Fizz-Buzz!</button>
         </div>
+
         <h5 id="fizzuser"></h5>
 
         <p class="result">o resultado final é: </p>

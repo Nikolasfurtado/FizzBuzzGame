@@ -4,14 +4,27 @@ body {
     font-family: 'Odibee Sans', cursive;
 }
 
-#fizzcount,
+#fizzcount {
+    background-color: #348498;
+    height: 200px;
+    width: 90%;
+    margin: 1rem auto;
+    font-size: 2em;
+}
+
 #fizzuser {
+    background-color: #004D61;
     height: 200px;
     width: 90%;
     margin: 20 auto;
+    font-size: 2rem;
 }
 
-.disablebtn {
+.d_btn {
+    visibility: visible;
+}
+
+.d_btnt {
     visibility: hidden;
 }
 
@@ -73,4 +86,41 @@ body {
 
 .footer {
     text-align: center;
+}
+
+.lplay {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.btns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.btns * {
+    margin-top: 3rem;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 1rem;
+    background-color: #B5DEFF;
+    border-radius: 15px;
+}
+
+.btns *:hover {
+    width: 6rem;
+    height: 6rem;
+    margin: 0 1rem;
+    background-color: #C1FFD7;
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    flex-flow: column nowrap;
+    align-items: center;
 }

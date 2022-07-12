@@ -26,7 +26,7 @@ function settimer(timerchoosen) {
             timer = 3000;
             break;
         case "ie":
-            timer = 1000;
+            timer = 10;
             break;
 
         default:
@@ -71,9 +71,11 @@ function calcfizz() {
             check.insertAdjacentHTML("beforeend", addnormal);
             storage.push(counter);
         }
-        counter++;
-    }
 
+    } else {
+        document.querySelector(".btns").classList.add("d_btnt");
+    } //falta desabilitar o botão com o counter
+    counter++;
 }
 
 function user_answer(id) {
@@ -99,7 +101,7 @@ function user_answer(id) {
         }
         counteruser++;
     } else {
-        document.querySelector(".btns").classList.add("disablebtn");
+        document.querySelectorAll(".btns").classList.add("d_btnt");
     }
 }
 
