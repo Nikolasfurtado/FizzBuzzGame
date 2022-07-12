@@ -5,29 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Fizz Buzz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div class="counter"></div>
-        <h4>lets play:</h4>
-        <h5 id="fizzcount"></h5>
-        <button onclick="fizzbuzz()">start</button>
 
-        <div class="btns">
-            <button id="n" onclick="user_answer(this.id)">Number</button>
-            <button id="f" onclick="user_answer(this.id)">Fizz!</button>
-            <button id="b" onclick="user_answer(this.id)">Buzz!</button>
-            <button id="fb" onclick="user_answer(this.id)">Fizz-Buzz!</button>
-        </div>
-        <h5 id="fizzuser"></h5>
-
-        <p class="result">o resultado final é: </p>
-        <button onclick="result_user()">resultado</button>
+    <div class="instructions">
+        <h3>Olá, bem vindo ao Jogo, Fizz-Buzz!</h3>
+        <h4>As Regras são Simples:</h4>
+        <h4>Escolha a sua dificuldade e clique em "Start"</h4>
+        <h4>Se o número for divisível por 3, aperte "Fizz!", se divisível por 5, aperte, "Buzz!" se for divisível por 3 e por 5, clique em "Fizz-Buzz!" caso não se encaixe em nenhuma das opções, selecione "number"; </h4>
+        <h4>a contagem termina no nº 100, você precisa terminar antes da maquina!</h4>
+    </div>
+    <div class="btn_container">
+        <button onclick="settimer(this.id)" id="nb" class="level_choose">NewBie</button>
+        <button onclick="settimer(this.id)" id="ey" class="level_choose">Easy</button>
+        <button onclick="settimer(this.id)" id="mm" class="level_choose">Medium</button>
+        <button onclick="settimer(this.id)" id="hd" class="level_choose">Hard</button>
+        <button onclick="settimer(this.id)" id="ie" class="level_choose">Insane</button>
 
     </div>
+    <div class="btn_container">
+        <button onclick="pg_redirect()" class="level_choose level_start">Start!</button>
+    </div>
+
+    <div class="footer">
+        <p class="resposta"></p>
+        <P class="hint">hint: Newbie:12s, Easy:9s, Medium:6s, hard:3s, Insane:1s</P>
+
+    </div>
+
     <script src="calcs.js "></script>
 </body>
 

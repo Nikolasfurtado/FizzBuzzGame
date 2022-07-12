@@ -1,10 +1,7 @@
-* {
-    font-family: 'Courier New', Courier, monospace;
-}
-
 body {
     background-color: black;
     color: white;
+    font-family: 'Odibee Sans', cursive;
 }
 
 #fizzcount,
@@ -16,4 +13,64 @@ body {
 
 .disablebtn {
     visibility: hidden;
+}
+
+.level_choose {
+    margin-top: 3rem;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 1rem;
+    background-color: #B5DEFF;
+    border-radius: 15px;
+}
+
+.level_choose:hover {
+    width: 6.2rem;
+    height: 6.2rem;
+    margin: 0 1rem;
+    background-color: #C1FFD7;
+    border-radius: 15px;
+}
+
+.level_choose:focus {
+    width: 6.2rem;
+    height: 6.2rem;
+    margin: 0 1rem;
+    background-color: #f7a440;
+    color: white;
+    border-radius: 15px;
+}
+
+.btn_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #FCFFA6;
+    padding: 1rem;
+}
+
+.instructions {
+    padding: 1rem;
+    background-color: #CAB8FF;
+    color: #524A69;
+}
+
+.instructions,
+.level_choose {
+    font-family: 'Odibee Sans', cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hint {
+    font-size: 1.5rem;
+}
+
+.resposta {
+    font-size: 3rem;
+    color: yellow;
+}
+
+.footer {
+    text-align: center;
 }

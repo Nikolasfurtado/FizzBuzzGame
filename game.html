@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fizz Buzz Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="counter"></div>
+        <h4>lets play:</h4>
+        <h5 id="fizzcount"></h5>
+        <button onclick="fizzbuzz()">start</button>
+
+        <div class="btns">
+            <button id="n" onclick="user_answer(this.id)">Number</button>
+            <button id="f" onclick="user_answer(this.id)">Fizz!</button>
+            <button id="b" onclick="user_answer(this.id)">Buzz!</button>
+            <button id="fb" onclick="user_answer(this.id)">Fizz-Buzz!</button>
+        </div>
+        <h5 id="fizzuser"></h5>
+
+        <p class="result">o resultado final é: </p>
+        <button onclick="result_user()">resultado</button>
+
+    </div>
+    <script src="calcs.js "></script>
+</body>
+
+</html>

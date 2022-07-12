@@ -1,5 +1,6 @@
 var check = document.querySelector("#fizzcount");
 var checkuser = document.querySelector("#fizzuser");
+var resposta = document.querySelector(".resposta")
 var storage = [];
 var storageuser = [];
 var counter = 1;
@@ -7,6 +8,44 @@ var counteruser = 1;
 var timer = 0;
 var result = 0;
 var u_error = 0;
+
+function settimer(timerchoosen) {
+
+    switch (timerchoosen) {
+        case "nb":
+            timer = 12000;
+            break;
+
+        case "ey":
+            timer = 9000;
+            break;
+        case "mm":
+            timer = 6000;
+            break;
+        case "hd":
+            timer = 3000;
+            break;
+        case "ie":
+            timer = 1000;
+            break;
+
+        default:
+            timer = 0;
+            break;
+    }
+    return timer;
+
+}
+
+function pg_redirect() {
+    if (timer != 0) {
+        window.location.href = "game.html";
+        sessionStorage.setItem("recover", timer)
+    } else {
+        resposta.innerText = "Selecione uma dificuldade."
+        setTimeout(function() { resposta.innerText = "" }, 2000);
+    }
+}
 
 function calcfizz() {
 
@@ -87,6 +126,7 @@ function result_user() {
 }
 
 function fizzbuzz() {
+    let timer = sessionStorage.getItem("recover");
     setInterval(() => {
         calcfizz()
     }, timer);
