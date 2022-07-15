@@ -4,12 +4,23 @@ body {
     font-family: 'Odibee Sans', cursive;
 }
 
+.d_btn {
+    font-size: 2rem;
+    font-family: 'Odibee Sans', cursive;
+}
+
+#showmyscore {
+    font-size: 1.5rem;
+    font-family: 'Odibee Sans', cursive;
+}
+
 #fizzcount {
     background-color: #348498;
     height: 200px;
     width: 90%;
     margin: 1rem auto;
     font-size: 2em;
+    padding: 1%;
 }
 
 #fizzuser {
@@ -18,14 +29,7 @@ body {
     width: 90%;
     margin: 20 auto;
     font-size: 2rem;
-}
-
-.d_btn {
-    visibility: visible;
-}
-
-.d_btnt {
-    visibility: hidden;
+    padding: 1%;
 }
 
 .level_choose {
@@ -101,7 +105,8 @@ body {
     padding: 0;
 }
 
-.btns * {
+.btns *,
+#showmyscore {
     margin-top: 3rem;
     width: 6rem;
     height: 6rem;

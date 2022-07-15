@@ -26,7 +26,7 @@ function settimer(timerchoosen) {
             timer = 3000;
             break;
         case "ie":
-            timer = 10;
+            timer = 1000;
             break;
 
         default:
@@ -73,8 +73,12 @@ function calcfizz() {
         }
 
     } else {
-        document.querySelector(".btns").classList.add("d_btnt");
-    } //falta desabilitar o botão com o counter
+        var btn1 = document.getElementById("n").disabled = true;
+        var btn2 = document.getElementById("f").disabled = true;
+        var btn3 = document.getElementById("b").disabled = true;
+        var btn4 = document.getElementById("fb").disabled = true;
+
+    }
     counter++;
 }
 
@@ -124,7 +128,7 @@ function result_user() {
     } else {
         el.innerHTML = '<p class="result">Ahh, está muito fácil pra você! Tenta um nível mais alto! seu resultado final é: ' + result + "% de acertos e " + u_error + '% de erros!</p>';
     }
-
+    var btn5 = document.getElementById("showmyscore").disabled = true;
 }
 
 function fizzbuzz() {
